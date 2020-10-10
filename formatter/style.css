@@ -1,0 +1,390 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+</style>
+*
+{
+	margin:0;
+	padding:0;
+}
+header
+{
+	background-color: white;
+	height:25px;
+	line-height: 80px;
+}
+ul
+{
+	list-style: none;
+}
+ul li
+{
+	display: inline-block;
+	margin-left: 55px;
+	font-size: 90%;
+	word-spacing: 30px;
+
+}
+header nav
+{
+	float: right;
+	margin-top: -20px;
+	padding-right: 20px;
+}
+.logo img
+{
+	margin-top: 0px;
+	padding-left: 100px;
+}
+header nav ul li a
+{
+	padding-right: 10px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+header nav ul li a:hover
+{
+	color: blue;
+
+
+}
+.bgimage {
+	background: #4682B4;
+	color: #d3d3d3;
+	height: 550px;
+	position: relative;
+	margin-top: 30px;
+}
+.text   h1{
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	padding-right: 550px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	word-spacing: 5px;
+	letter-spacing:2px;
+}
+.text a{
+	color: white;
+}
+.fasfa-share{
+	padding-bottom: 100px;
+
+}
+.text img{
+	padding-left: 100px;
+	margin-top: 50px;
+   
+}	
+.text p{
+	font-family: 'Roboto', sans-serif;
+	margin-top: 40px;
+	color: white;
+	padding-left: 90px;
+	letter-spacing:1px;
+}
+.label{
+	font-family: 'Roboto', sans-serif;
+	float:right; 
+	color: 	#FFFAFA;
+	margin-top: -230px;
+	padding-right: 130px;
+	font-size: 16px;
+	font-weight: bold;
+	word-spacing: 5px;
+	letter-spacing:2px;
+
+}	
+.control{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: none;
+	margin-top: -60px;
+	padding-left:  920px;
+}
+#jsontemplate{
+	background:	#FFFAFA;
+	width: 150px;
+	height: 40px;
+	border: none;
+	display: inline-block;
+	font-size: 16px;
+	padding-left: 10px;
+	border-radius: 5px 5px 5px 5px;
+}
+.label1{
+	font-family: 'Roboto', sans-serif;
+	float:right; 
+	color: 	#FFFAFA;
+	margin-top: -140px;
+	padding-right: 100px;
+	font-size: 16px;
+	font-weight: bold;
+	word-spacing: 5px;
+	letter-spacing:2px;
+
+}
+.control1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: none;
+	margin-top: 30px;
+	padding-left:  920px;
+}
+#jsonspec{
+	background:	#FFFAFA;
+	width: 150px;
+	height: 40px;
+	border: none;
+	display: inline-block;
+	font-size: 16px;
+	padding-left: 10px;
+	border-radius: 5px 5px 5px 5px;
+}
+.label2{
+	float: right;
+	padding-right: 150px;
+	color: white;
+	border-radius: 5px 5px 5px 5px;
+	word-spacing: 5px;
+}
+.checkbox{
+	font-size: 18px;
+}
+.checkbox input{
+	display:inline-block;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	top: 0;
+	border-radius: 5px 5px 5px 5px;
+}
+.text2 {
+	float: right;
+    padding-right: 50px;
+    border: none;
+}
+.text2 textarea{
+	border-radius: 5px 5px 5px 5px;
+
+}
+
+.bgimage1 {
+	background: green;
+	color: #d3d3d3;
+	height: 180px;
+	position: relative;
+}
+.text3 h1{
+	text-align: center;
+	font-weight:bold;
+	size: 25px;
+	color: black;
+	word-spacing: 5px;
+	letter-spacing:2px;
+	font-stretch: expanded;
+    font-family: 'Roboto', sans-serif;
+
+}
+.text3 p{
+	text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+.bgimage2{
+	background:#FDF5E6;
+}
+.text4 h1{
+	text-align: center;
+	margin-top: 10px;
+	size: 25px;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+.text4 p{
+	text-align: center;
+	padding-left: 120px;
+	margin-top: 30px;
+	text-align: justify;
+	word-spacing: 3px;
+	letter-spacing:2px;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+
+}
+.text4 p1{
+	text-align: center;
+	float: right;
+	margin-top: -170px;
+	padding-right: 250px;
+	text-align: justify;
+	word-spacing: 5px;
+	letter-spacing:2px;
+	color: blac;
+	font-family: 'Roboto', sans-serif;
+}
+.text4 p1 a{
+	color: blue;
+	text-decoration: none;
+}
+.text4 p1 a:hover{
+	color: black;
+}
+.bgimage3 {
+	background: #4682B4;
+	color: #d3d3d3;
+	height: 550px;
+	position: relative;
+	height: 400px;
+}
+.text5 h1{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+.text5 p{
+	text-align: center;
+	padding-left: 50px;
+	margin-top: 90px;
+	word-spacing: 3px;
+	letter-spacing:2px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+#buttontwo{
+	background-color: 	#1E90FF;
+	border: none;
+	font-size: 15px;
+	color:  white;
+	font-weight: lighter;
+	text-transform: uppercase;
+	line-height: 50px;
+	width:  250px;
+	border-radius: 5px 5px 5px 5px;
+}
+#buttontwo:hover{ 
+	background: #00BFFF;
+}
+.text6 h1{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;	
+	margin-top: 50px;
+	word-spacing: 2px;
+	font-size: 50px;
+}	
+.text6 p{
+	text-align: center; 
+	word-spacing: 2px;
+}
+.text6 h3{
+	text-align: center; 
+}
+.text6 a{
+	color: blue;
+	text-decoration: none;
+} 
+#buttonthree{
+	font-family: 'Roboto', sans-serif;	
+	background-color: yellow;
+	border: none;
+	font-weight: bold;
+	font-size: 15px;
+	color:  black;
+	font-weight: lighter;
+	text-transform: uppercase;
+	line-height: 50px;
+	width:  250px;
+	border-radius: 5px 5px 5px 5px;
+}
+#buttonthree:hover{ 
+	background: #F0E68C;
+}
+.bgimage4{
+    background: #FDF5E6;
+	color: #d3d3d3;
+	height: 100%;
+	position: relative;
+}
+.text7 h1{
+	text-align: center;
+	margin-top: 0px;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+}
+.text7 h3{
+	padding-left: 350px;
+	color: black;
+	margin-top: 30px;
+}
+.text7 p{
+	padding-left: 350px;
+	color: black;
+}
+.bgimage5{
+	background: #4682B4;
+}
+.wrapper  h2{
+	font-family: 'Roboto', sans-serif;	
+	text-align: center;
+	font-size: 50px;
+	color: white;
+}
+.wrapper p{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;	
+	color: white;
+	word-spacing: 2px;
+
+}
+form{
+	padding-left: 350px;
+}
+.wrapper .input_field{
+	margin-bottom: 10px;
+}
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+	width: 70%;
+	padding: 10px;
+	border-radius: 5px;
+}
+.wrapper textarea{
+	height: 80px;
+}
+#buttonfour{
+	background-color:#1E90FF;
+	font-family: 'Roboto', sans-serif;	
+	border: none;
+	font-size: 15px;
+	color:  white;
+	font-weight: lighter;
+	text-transform: uppercase;
+	line-height: 50px;
+	width: 80px;
+	border-radius: 5px 5px 5px 5px;
+	font-weight: bold;
+}
+#buttontwo:hover{ 
+	background: #00BFFF;
+}
+.wrapper #error_message{
+	margin-bottom: 20px;
+	padding: 0px;
+	background: #fe8b8e;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.5s ease;
+}
+.bgimage6{
+	background: black;
+	height: 70px;
+}
+.footer-bottom{
+	color: white;
+	text-align: center;
+}

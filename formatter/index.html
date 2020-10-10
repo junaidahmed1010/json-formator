@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JSON Formatter &amp; Validator</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6eb5dd728f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <a href="" class="logo"><img src="json3.png" alt=""></a>
+                    <nav>
+                        <ul>
+                            <li><a href="#ABOUT">About</a>      </li>
+                            <li><a href="#LEARN ABOUT JSON">Learn</a>      </li>
+                            <li><a href="#BOOKMARKLET">Bookmarklet</a></li>
+                            <li><a href="#FAQ">FAQ</a>        </li>
+                            <li><a href="#CHANGELOG">Changelog</a>  </li>
+                            <li><a href="#error_message">Contact</a>    </li>
+                            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+               <div class="bgimage"><br><br><br>    
+               <div class="text">
+                   <h1>JSON Data/URL</h1> 
+                   <img src="arrow2.png" alt="arrow2"> <br>
+                   <p>Paste in JSON or a <br>URL, drop a file,<br> 
+                    <a href="G:\Blur(TM)">browse</a>,or load an <br>
+                    <a href="">example</a>  to begin.
+                 </p>
+               </div> 
+               <div class="field">
+<label class="label">JSON Template</label>
+<div class="control">
+<div class="select is-fullwidth">
+<select id="jsontemplate" name="jsontemplate" data-remember="">
+<option value="0">4 Space Tab</option>
+<option value="1" selected="">3 Space Tab</option>
+<option value="2">2 Space Tab</option>
+<option value="3">Compact</option>
+<option value="4">1 Tab Tab</option>
+</select>
+</div>
+</div>
+</div>   
+<div class="field1">
+<label class="label1">JSON Specification</label>
+<div class="control1">
+<div class="select is-fullwidth">
+<select id="jsonspec" name="jsonspec" data-remember="">
+<option value="4" selected="">RFC 8259</option>
+<option value="2">RFC 7159</option>
+<option value="1">RFC 4627</option>
+ <option value="3">ECMA-404</option>
+<option value="0">Skip Validation</option>
+</select>
+</div>
+</div>
+</div>
+<label class="checkbox label2" for="jsonfix" > Fix JSON  
+<input type="checkbox" name="jsonfix" id="jsonfix" data-remember checked>  </label>
+<div class="text2">
+    <textarea class="textarea is-code will-clear" id="data" name="data" data-gramm_editor="false" spellcheck="false" autofocus="" placeholder="{}" rows="5"  style="margin-top: -280px; margin-bottom: 0px; height: 316px; width: 715px;"></textarea>
+</div><br><br>
+    <div class="process">
+<p id="GFG_UP" style= 
+        "font-size: 15px; font-weight: bold;"> 
+    </p> 
+    
+    <button style="background-color:#1E90FF;
+                   padding:10px;
+                   border-radius: 5px;
+                   margin:auto;
+                   display: block;
+                   border: none;
+                   border: none;
+                   font-weight: bold;
+                   text-align: center;
+                   hover background-color: #00BFFF;
+    font-size: 15px;
+    color:  white;
+    font-weight: lighter;
+    text-transform: uppercase;
+    line-height: 40px;
+    width:  120px;
+"onclick="gfg_Run();"> 
+        process 
+    </button> 
+    
+    <pre id="GFG_DOWN" style= 
+        "color:white; font-size: 20px; font-weight: bold; text-align: center; background: black;">
+    </pre> 
+    
+    <script> 
+        var el_up = document.getElementById("GFG_UP").innerHTML; 
+        var el_down = document.getElementById("GFG_DOWN"); 
+        var obj = 
+            {"store":{"book":[{"category":"reference","author":"Nigel Rees","title":"Sayings of the Century","price":8.95},{"category":"fiction","author":"Evelyn Waugh","title":"Sword of Honour","price":12.99},{"category":"fiction","author":"J. R. R. Tolkien","title":"The Lord of the Rings","isbn":"0-395-19395-8","price":22.99}],"bicycle":{"color":"red","price":19.95}}}; 
+              
+        el_up.innerHTML = JSON.stringify(obj); 
+            
+        function gfg_Run() { 
+            el_down.innerHTML = JSON.stringify(obj, undefined, 4); 
+        } 
+    </script> </div></div><br> 
+<div class="text3" id="ABOUT">
+    <h1> ABOUT </h1>  <br><br>
+    <p>
+        The JSON Formatter was created to help folks with debugging. As <br>
+        JSON data is often output without line breaks to save space, it can be <br>
+        extremely difficult to actually read and make sense of it. This tool <br>
+        hoped to solve the problem by formatting and beautifying the JSON <br>
+        data so that it is easy to read and debug by human beings.<br><br>
+        To further expand the debugging capabilities, advanced JSON <br>
+        validation was soon added following the description set out by <br>
+        Douglas Crockford of json.org in RFC 4627. It has since been updated <br>
+        to allow validation of multiple JSON standards, including both current <br>
+        specifications RFC 8259 and ECMA-404.<br><br>
+        Most recently, the capability to fix common JSON errors was added. If <br>
+        enabled, it will replace incorrect quotes, add missing quotes, escape<br>
+         unescaped characters, and remove comments and trailing commas.<br><br>
+    </p> 
+</div>  
+               </div>
+  <div class="bgimage2"><br><br><br> 
+  <div class="text4" id="LEARN ABOUT JSON">
+      <h1> LEARN ABOUT JSON </h1>
+      <p> JSON or JavaScript Object Notation is a language-<br> 
+      independent open data format that uses human-readable<br> 
+       text to express data objects consisting of attribute-value<br> 
+        pairs.<br> <br> 
+        Although originally derived from the JavaScript scripting <br> 
+        language, JSON data can be generated and parsed with a <br> 
+        wide variety of programming languages including <br> 
+        JavaScript, PHP, Python, Ruby, and Java.
+        </p>
+        <p1> To learn more about JSON check <br>
+        out some of the following links.<br>
+         <a href="https://www.json.org/json-en.html">json.org</a><br>
+         <a href="">Wikipedia-JSON</a><br>
+         <a href="">w3schools.com-JSON Tutorial</a><br>
+         <a href="">bob.ippoli.to-Remote JSON-JSONP</a><br>
+         <a href="">Wikipedia-JSONP</a><br>
+        </p1><br><br><br> 
+  </div>    
+  </div>
+      
+  </div>
+  <div class="bgimage3">
+  <div class="text5" id="BOOKMARKLET"><br><br> 
+    <h1>BOOKMARKLET</h1>
+    <p>
+        Install the JSON Formatter & Validator Bookmarklet to quickly and <br>
+        easily format and validate any public JSON URL with a single click.<br><br><br>
+        <button id="buttontwo"> Format & Validate Json </button><br><br><br>
+        To install, just drag the button above into your bookmarks toolbar.
+
+    </p>
+      
+  </div></div>
+  <div class="text6" id="FAQ">
+      <h1> FAQ </h1><br><br>
+      <p>
+          Have questions? These are the answers to the questions we are most <br>
+          frequently asked.</p><br><br>
+
+
+
+<h3>CAN I PASS MY JSON DATA IN THE URL?</h3><br>
+<p>Yes! You can populate and process your JSON data automatically by <br>
+submitting a GET or POST request (example) with the following query <br>
+parameters:</p><br>
+
+<p>data    JSON Data or a URL<br>
+template    fourspace, threespace, twospace, compact, or onetab<br>
+spec    rfc8259, rfc7159, rfc4627, ecma404, or skip<br>
+fix true or false<br>
+process true or false</p><br><br>
+<h3>WHICH JSON SPECIFICATION SHOULD I CHOOSE?</h3><br>
+<p>When in doubt, our recommendation is to validate JSON with the latest <br>
+specification, RFC 8259, as it will ensure the highest level of compatibility.</p><br><br>
+
+<h3>IS ANY OF MY JSON DATA RECORDED OR SAVED?</h3><br>
+<p>Absolutely not! Your data is merely processed and returned directly to <br>
+you. For more information visit our <a href="https://curiousconcept.com/privacy">Privacy Policy.</a>  </p><br><br>
+
+<h3>IS THE JSON FORMATTER & VALIDATOR AVAILABLE OFFLINE?</h3><br>
+<p>In order to keep focused on providing the best JSON beautifier and <br>
+validator online, we do not offer an offline version.</p><br><br>
+
+<h3>CAN I DONATE TO THE PROJECT?</h3><br>
+<p>Definitely! Although you are in no way obligated, we genuinely appreciate <br>
+every contribution we receive.<br><br></p>
+
+           <p>  <a href="https://curiousconcept.com/donate"> <button  id="buttonthree"> donate </button></a></p><br><br>
+<p>A big thank you goes out to all the donors who have already contributed. <br>
+We are humbled by your kindness and generosity.</p><br><br><br>
+
+
+
+<p>Still have questions? Please <a href="https://jsonformatter.curiousconcept.com/#changelog">Contact us</a>  .
+      </p>
+  </div><br><br><br>
+<div class="bgimage4"><br><br><br>
+ <div class="text7" id="CHANGELOG" >
+     <h1> CHANGELOG </h1>
+     <p>
+<h3>AUGUST 2020</h3><br><br>
+<p>Added compact template wrapping.<br>
+Added performance improvements.<br>
+Added POST support.<br>
+Added improved error handling.<br>
+Updated bookmarklet to use query parameters.<br>
+Fixed an overly aggressive duplicate key validation bug. Thanks Mark.<br>
+Fixed duplicate error messages.<br>
+Fixed unexpected scrolling on objects and arrays expand/collapse.<br>
+Fixed autofocus.<br>
+Fixed a fullscreen bug.</p><br>
+<h3>MARCH 2020</h3><br><br>
+<p>Added Frequently Asked Questions.</p><br>
+<h3>FEBRUARY 2020</h3><br><br>
+<p>Added an example.<br>
+Added URL query parameters.<br>
+Updated frontend.<br>
+Fixed a charset case sensitivity issue. Thanks Muneer.<br>
+Fixed a typo. Thanks Melissa.<br>
+Fixed a Safari error. Thanks Alexander.<br>
+Fixed a selection highlighting issue. Thanks Thomas.</p><br>
+<h3>JANUARY 2020</h3><br><br>
+<p>Fixed a scrolling performance issue. Thanks Stuart.</p><br>
+<h3>NOVEMBER 2019</h3><br><br>
+<p>Added integration with the Mutate: Data Converter and the JSONPath Expression Tester, <br>
+via new convert and query buttons.<br>
+Added drag and drop, and browse, local file loading.<br>
+Added capability to fix common JSON errors. It will optionally replace incorrect quotes,<br>
+ add missing quotes, escape unescaped characters, and remove comments and trailing commas.<br>
+Fixed an object key string comparison issue. Thanks Gwon.</p><br>
+<h3>OCTOBER 2019</h3><br><br>
+<p>Added the latest JSON specification, RFC 8259.<br>
+Added performance improvements.<br>
+Added limits to validation errors.<br>
+Added limits to object/array depth.<br>
+Updated default JSON specification to RFC 8259.<br>
+Updated validation output message order. Errors appear before warnings.<br>
+Fixed a closing bracket/brace validation issue. Thanks Khurram.</p><br>
+<h3>MAY 2019</h3><br><br>
+<p>Added error highlight toggling. Thanks Raf.</p><br>
+<h3>JANUARY 2019</h3><br><br>
+<p>Added a single tab, tab template.</p><br>
+<h3>DECEMBER 2018</h3><br><br>
+<p>Added JSON validation processing optimizations.<br>
+Added character position to invalid character errors.<br>
+Added additional tooltips.<br>
+Updated external libraries.<br>
+Fixed an issue with fullscreen toggle. Thanks to everyone that reported it.<br>
+Fixed an issue when validating JSONP to RFC7159.</p><br>
+<h3>JULY 2018</h3><br><br>
+<p>Updated broken bob.ippoli.to link. Thanks Rodrigo.</p><br>
+<h3>JUNE 2018</h3><br><br>
+<p>Fixed a cookie bug.</p><br>
+<h3>NOVEMBER 2017</h3><br><br>
+<p>Improved images.<br>
+Updated broken Learn About JSON links. Thanks Tony.</p><br>
+<h3>OCTOBER 2016</h3><br><br>
+<p>Switched copy to use clipboard.js</p><br>
+<h3>JULY 2016</h3><br><br>
+<p>Fixed a RFC 7159 validation bug. Thanks Anonymous.</p><br>
+<h3>NOVEMBER 2015</h3><br><br>
+<p>Added the ability to validate additional JSON specifications, <br>
+RFC 7159 and ECMA-404.Added tooltips.<br>
+Improved url validation.<br>
+Fixed a validation bug. Thanks Philipp.<br>
+Fixed a parse bug. Thanks Bla.</p><br>
+<h3>OCTOBER 2015</h3><br><br>
+<p>Added the ability expand/collapse all nodes.</p><br>
+<h3>AUGUST 2015</h3><br><br>
+<p>Added the ability to rename results.<br>
+Added the ability to download results.<br>
+Switched to HTTPS.<br>
+Fixed a text rendering bug. Thanks Kyle.</p><br>
+<h3>OCTOBER 2014</h3><br><br>
+<p>Fixed a template collapse/expand bug. Thanks Dmitry.<br>
+Fixed a copied result entity bug. Thanks Jim.</p><br>
+<h3>SEPTEMBER 2014</h3><br><br>
+<p>Added a four space tab template.<br>
+Added a clear button.<br>
+Improved grow/shrink buttons.<br>
+Fixed a clipboard bug.</p><br>
+<h3>JULY 2014</h3><br><br>
+<p>Redesign of frontend.<br>
+Added cookies to remember options.</p><br>
+<h3>SEPTEMBER 2013</h3><br><br>
+<p>Changed hosts to further improve speed.</p><br>
+<h3>APRIL 2013</h3><br><br>
+<p>Added autofocus to JSON Data input.<br>
+Fixed stripping of invisible characters. Thanks Paul.</p><br>
+<h3>MARCH 2013</h3><br><br>
+<p>Fixed a typo. Thanks Anonymous.<br>
+Added a donation button.</p><br>
+<h3>FEBRUARY 2013</h3><br><br>
+<p>Fixed a number validation bug. Thanks Chris and Anonymous.</p><br>
+<h3>JANUARY 2013</h3><br><br>
+<p>Updated external libraries.<br>
+Improved caching.</p><br>
+<h3>MAY 2011</h3><br><br>
+<p>Added ability to collapse/expand objects and arrays.<br>
+Added a two space tab template.<br>
+Fixed bugs reported since latest changes.</p><br>
+<h3>FEBRUARY 2011</h3><br><br>
+<p>Redesign of frontend.<br>
+Improved validation logic. String validation in particular is greatly improved.<br>
+Improved error messages.<br>
+Added goto error ability.<br>
+Added ability to accept JSONP. Check out this example.<br>
+Added ability to pass JSON URL in URL as hash. Check out this example.<br>
+Added a bookmarklet.<br>
+Added a button to copy results to clipboard.<br>
+Removed custom template capability. From now on send in template requests & examples.<br>
+Removed Select All button.</p><br>
+<h3>NOVEMBER 2009</h3><br><br>
+<p>Upgraded hosts to improve speed.</p><br>
+<h3>DECEMBER 2008</h3><br><br>
+<p>Added a Select All button.<br>
+Fixed url validation and output bugs.</p><br>
+<h3>NOVEMBER 2008</h3><br><br>
+<p>Improved JSON formatter.<br>
+Improved JSON parser.<br>
+Redesign of frontend.<br>
+Added multiple results.<br>
+Added templates.<br>
+Added more helpful error messages.<br>
+Added validation.<br>
+Added resizable textareas.</p><br>
+<h3>JANUARY 2007</h3><br><br>
+<p>Initial release of the JSON Formatter.</p><br>
+ </div>  
+    
+</div></p></div></div>  
+<div class="bgimage5">
+<div class="wrapper">
+    <h2>contact</h2><br>
+    <p>Over the years the JSON Formatter & Validator has been immensely improved through the <br>
+    feedback and suggestions of its users. We encourage you to continue to pass along any new <br>
+    recommendations, requests or bug reports.</p><br>
+    <div id="error_message"></div>
+
+    <form id="myform" onsubmit="return validation()">
+        <div class="input_field">
+        <input type="text" placeholder="Name" id="name">
+        </div>
+        <div class="input_field">
+        <input type="text" placeholder="Email Adress" id="Email Adress">
+        </div>
+        <div class="input_field">
+        <input type="text" placeholder="Message" id="Message">
+        </div>
+         <button id="buttonfour"> Send </button>
+    </form></div></div>
+</div>
+</div>
+<div class="bgimage6"><br>
+<div class="footer-bottom">
+           @ 2020 Junaid Ahmed Curious Concept | Privacy Policy
+        </div>
+    </div>
+    </body>
+</html>
